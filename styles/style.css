@@ -361,6 +361,7 @@ outline: 1px solid var(--р2-color);
   display: grid;
   block-size: 100dvh;
   }
+}
 
   .main-title {
   display: flex;
