@@ -15,11 +15,11 @@
 }
 
 .header {
-  block-size: 100dvh;
+  block-size: 100%;
+  box-sizing: border-box;
   min-block-size: 668px;
   padding: 10px;
   position: relative;
-
 }
 
 .decorated-zone {
