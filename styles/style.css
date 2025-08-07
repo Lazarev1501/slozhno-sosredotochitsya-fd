@@ -14,10 +14,11 @@
 }
 
 .header {
-  padding: 10px;
-  position: relative;
   block-size: 100dvh;
   min-block-size: 668px;
+  padding: 10px;
+  position: relative;
+
 }
 
 .decorated-zone {
@@ -206,7 +207,6 @@ outline: 1px solid var(--р2-color);
   .header {
   padding: 20px;
   display: grid;
-  block-size: 100dvh;
 }
 
 .header__theme-menu {
@@ -305,7 +305,7 @@ outline: 1px solid var(--р2-color);
 @media (width>=1024px) {
   .header {
   display: grid;
-  block-size: 100vh;
+  block-size: 100dvh;
   }
 
   .main-title {
