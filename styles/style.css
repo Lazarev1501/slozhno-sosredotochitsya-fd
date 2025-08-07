@@ -16,7 +16,6 @@
 
 .header {
   block-size: 100%;
-  box-sizing: border-box;
   min-block-size: 668px;
   padding: 10px;
   position: relative;
@@ -40,7 +39,7 @@ position: relative;
 .decorated-zone::after {
   content: '';
   position: absolute;
-  bottom: 30px;
+  bottom: 10px;
   left: 10px;
   width: 25px;
   height: 25px;
@@ -51,10 +50,12 @@ position: relative;
 .decorated-word {
   position: absolute;
   top:15px;
-  right: 20px;
+  right: 16px;
   font-family: var(--accent-font, sans-serif);
   font-size: 18px;
   font-weight: 400;
+  letter-spacing: 0%;
+  line-height: 80%;
   color: var(--accent-color);
 }
 
@@ -72,7 +73,7 @@ position: relative;
 
 .header__theme-menu {
   display: flex;
-  padding-top: 50px;
+  padding-top: 65px;
   justify-self:end;
   align-self:flex-start;
   margin-bottom: 40px;
@@ -81,7 +82,7 @@ position: relative;
 .header__theme-menu-list {
   display: flex;
   flex-direction: column;
-  gap:20px;
+  gap:10px;
 }
 
 .header__theme-menu-item {
@@ -115,6 +116,7 @@ outline: 1px solid var(--р2-color);
 
 .main-title {
   margin: 0;
+  margin-top: 68px;
   line-height: 83%;
   font-family: var(--main-font);
   color: var(--title-color);
@@ -123,7 +125,7 @@ outline: 1px solid var(--р2-color);
 }
 
 .main-title-decor {
-  margin-top: 55px;
+  margin-top: 53px;
 }
 
 .title-decor {
@@ -136,7 +138,6 @@ outline: 1px solid var(--р2-color);
 }
 
 .main {
-  margin-top: 40px;
   padding: 0 10px 40px;
 }
 
@@ -145,12 +146,16 @@ outline: 1px solid var(--р2-color);
 }
 
 .section__title {
-  margin: 0;
   color: var(--р2-color);
   font-size: 18px;
 }
 
+.article__title {
+  margin-top: 20px;
+}
+
 .article__subtitle {
+  margin-top: 20px;
   display: block;
   background-color: var(--accent-color);
   color: var(--bg-color);
@@ -162,6 +167,8 @@ outline: 1px solid var(--р2-color);
   color: var(--p-color);
   font-weight: 400;
   font-size: 18px;
+  margin-top: 10px;
+  line-height: 23.5px;
 }
 
 .text__link {
@@ -180,15 +187,16 @@ outline: 1px solid var(--р2-color);
 }
 
 .title__background-wiew {
-  display: inline-block;
+  display: block;
   background-color: var(--accent-color);
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .gallery {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(auto-fit, 1fr);
   gap:10px;
+  max-height: 790px;
 }
 
 .gallery__img {
@@ -198,21 +206,51 @@ outline: 1px solid var(--р2-color);
 }
 
 .footer {
+  width:100%;
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.footer .decorated-zone::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  right: 0;
+  width: 25px;
+  height: 25px;
+  border-top: 1px solid var(--р2-color);
+  border-right: 1px solid var(--р2-color);
+}
+
+.footer .decorated-zone::after {
+  content: '';
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  border-bottom: 1px solid var(--р2-color);
+  border-left: 1px solid var(--р2-color);
+}
+
+.footer.main-title {
+  display: flex;
+  margin: 0 auto;
+  align-self: center;
+}
+
 @media (width>=768px) {
   .header {
+  min-height: 100%;
   padding: 20px;
   display: grid;
 }
 
 .header__theme-menu {
   display: flex;
-  padding-top: 150px;
+  padding-top: 175px;
   justify-self:end;
   align-self:flex-start;
   margin-bottom: 0;
@@ -240,17 +278,29 @@ outline: 1px solid var(--р2-color);
 .main-title {
   display: flex;
   align-items: center;
-  padding-bottom: 110px;
+  padding-top: 110px;
   margin-left: -20px;
   font-size:clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
 }
+
+.article__title {
+  margin-top: 0;
+}
+
+.article__text {
+  color: var(--p-color);
+  font-weight: 400;
+  font-size: 18px;
+  margin-bottom: 20px;
+  line-height: 23.5px;
+}
+
 .main-title-decor {
   max-width: 364px;
   max-height: 117px;
   display: grid;
   justify-self: end;
-  margin-bottom: 100px;
-  margin-top: 0;
+  margin-top: 160px;
 }
 
 .header.decorated-zone::after {
@@ -263,7 +313,8 @@ outline: 1px solid var(--р2-color);
   gap:20px;
 }
 .section__title {
-  display: grid;
+  margin-top: 0;
+  margin-bottom: 20px;
   gap:20px;
 }
 .horizontal__section__title {
