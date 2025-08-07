@@ -1,5 +1,6 @@
 .page {
   box-sizing: border-box;
+  width: 100%;
   height: 100%;
   margin: 0;
   padding: 0;
@@ -361,7 +362,7 @@ outline: 1px solid var(--р2-color);
   display: grid;
   block-size: 100dvh;
   }
-}
+
 
   .main-title {
   display: flex;
@@ -402,4 +403,5 @@ outline: 1px solid var(--р2-color);
 
   .gallery {
   block-size: 1048px;
+}
 }
