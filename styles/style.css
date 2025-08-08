@@ -411,6 +411,11 @@ outline: 1px solid var(--р2-color);
   }
 
   .gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto auto 1fr;
+  grid-auto-rows: 180px;
+  gap: 20px;
   block-size: 1048px;
 }
   .footer {
