@@ -369,21 +369,6 @@ outline: 1px solid var(--р2-color);
   block-size: 100dvh;
   }
 
-
-  .main-title {
-  display: flex;
-  align-items: center;
-  margin-top: 230px;
-  }
-
-  .main-title-decor {
-  max-width: 491px;
-  max-height: 71px;
-  display: grid;
-  justify-self: end;
-  margin-bottom: 130px;
-  }
-
   .header__theme-menu {
   justify-self:center;
   align-items: start;
@@ -393,8 +378,22 @@ outline: 1px solid var(--р2-color);
   .header__theme-menu-list {
     display: flex;
     flex-direction: row;
-    gap:20px;
+    gap:10px;
     margin: 0;
+  }
+
+  .main-title {
+  display: flex;
+  align-items: center;
+  margin-top: 100px;
+  }
+
+  .main-title-decor {
+  max-width: 491px;
+  max-height: 71px;
+  display: grid;
+  justify-self: end;
+  margin-top: 50px;
   }
 
   .horizontal__section__title {
