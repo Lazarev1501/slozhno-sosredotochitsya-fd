@@ -252,7 +252,7 @@ outline: 1px solid var(--р2-color);
   block-size: 100vh;
   padding: 20px;
   display: grid;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 
 .header__theme-menu {
