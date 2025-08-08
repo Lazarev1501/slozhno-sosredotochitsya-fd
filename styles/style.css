@@ -403,7 +403,11 @@ outline: 1px solid var(--р2-color);
 
   .article__vertical {
     display: flex;
-    gap:20px
+    gap:20px;
+  }
+
+  .text-column {
+    width:33.3%
   }
 
   .gallery {
