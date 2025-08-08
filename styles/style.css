@@ -413,4 +413,7 @@ outline: 1px solid var(--р2-color);
   .gallery {
   block-size: 1048px;
 }
+  .footer {
+    margin-top: 60px;
+  }
 }
