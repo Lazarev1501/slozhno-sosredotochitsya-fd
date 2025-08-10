@@ -4,7 +4,9 @@
   --title-color: rgba(255, 194, 230, 1);
   --p-color: rgba(53, 52, 48, 1);
   --р2-color:rgba(53, 52, 48, 1);
-  --bg-img:url(/images/cover-image-light.png);
+  --bg-img:url(../images/cover-image-light.png);
+  --outline-color:rgba(53, 52, 48, 0.5);
+  --shadow-color:rgba(255, 141, 203, 1);
   --background-color:rgba(255, 241, 247, 1);
 }
 
@@ -15,11 +17,12 @@
     --title-color: rgba(255, 194, 230, 1);
     --p-color: rgba(53, 52, 48, 1);
     --р2-color:rgba(53, 52, 48, 1);
-    --bg-img:url(/images/cover-image-light.png);
+    --bg-img:url(../images/cover-image-light.png);
     --background-color:rgba(255, 241, 247, 1);
+    --outline-color:rgba(53, 52, 48, 0.5);
+    --shadow-color:rgba(255, 141, 203, 1);
   }
+
 }
 
-:root.theme-light  .decorated-word {
-    display: none;
-  }
+
